@@ -1,22 +1,25 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
+import tailwindPlugin from "./plugins/tailwind-config.cjs";
 
 const config: Config = {
   title: "Prizm IO",
-  tagline: "Dinosaurs are cool",
-  favicon: "img/favicon.ico",
+  tagline: "Prizm IO landing page",
+  favicon: "img/favicon.svg",
+
+  plugins: [tailwindPlugin],
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://prizm.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "prizm", // Usually your GitHub org/user name.
+  projectName: "prizm docs", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
