@@ -8,7 +8,7 @@ export default function Home(): JSX.Element {
           width={180}
           className="opacity-0 animate-fade-delay"
         />
-        <span className="opacity-0 text-center animate-fade-delay-text">
+        <span className="opacity-0 text-center animate-fade-delay-text text-white">
           IoT Made Simple
         </span>
       </div>
