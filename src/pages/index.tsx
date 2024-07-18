@@ -110,7 +110,3 @@ export default function Home(): JSX.Element {
 		</span>
 	</div>
 </div>; */
-
-//  "bg-[url('../../static/img/background.jpg')]";
-
-//  md:h-40 lg:h-48
