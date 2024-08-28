@@ -1,5 +1,5 @@
 import { useState } from "react";
-import DashboardButton from "./dashboard-button";
+import DashboardButton, { DASHBOARD_LINK } from "./dashboard-button";
 import HamburgerButton from "./hamburger-button";
 import NavigationItem from "./navigation-item";
 import { NavItem, NavItems } from "./navigation-item-list";
@@ -29,7 +29,7 @@ export default function Navigation() {
           ))}
         </div>
         <div className="hidden lg:block">
-          <DashboardButton>Dashboard</DashboardButton>
+          <DashboardButton link={DASHBOARD_LINK}>Dashboard</DashboardButton>
         </div>
         <div className="lg:hidden">
           <HamburgerButton onClick={() => setIsDrawerOpen(true)} />
@@ -45,7 +45,7 @@ export default function Navigation() {
                 </DrawerButton>
               ))}
             </div>
-            <DashboardButton>Dashboard</DashboardButton>
+            <DashboardButton link={DASHBOARD_LINK}>Dashboard</DashboardButton>
           </div>
         </Drawer>
       </div>
