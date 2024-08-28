@@ -1,8 +1,16 @@
+import { cn } from "@site/src/utils/utils";
 import { DASHBOARD_LINK } from "../navigation/dashboard-button";
+import useFadeIn from "@site/src/utils/use-fade-in";
 
 export default function CallToAction() {
+  const fadeIn = useFadeIn(true, 200);
   return (
-    <div className="w-full min-h-[577px] py-[70px] flex-col justify-start items-center inline-flex">
+    <div
+      className={cn(
+        "w-full min-h-[577px] py-[70px] flex-col justify-start items-center inline-flex",
+        fadeIn,
+      )}
+    >
       <div
         className="w-full max-w-[1224px] h-[437px] py-[90px] flex-col justify-center items-center gap-[60px] flex rounded-[10px] border border-[#282D45] px-4"
         style={{
