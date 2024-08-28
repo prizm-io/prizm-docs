@@ -1,11 +1,14 @@
-import Navigation from '../components/navigation';
-import Hero from '../components/hero/hero';
+import Main from "../components/main";
+import CallToAction from "../components/call-to-action";
+import Navigation from "../components/navigation";
+import Footer from "../components/footer";
 
 export default function Home(): JSX.Element {
-	return (
-		<div className='min-h-screen bg-[#151934] px-4'>
-			<Navigation />
-			<Hero />
-		</div>
-	);
+  return (
+    <Main>
+      <Navigation />
+      <CallToAction />
+      <Footer />
+    </Main>
+  );
 }
