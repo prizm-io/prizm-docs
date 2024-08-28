@@ -1,13 +1,14 @@
 import CallToAction from "../components/cta/CallToAction";
+import Main from "../components/main";
 import Navigation from "../components/navigation";
 import Footer from "../components/footer/Footer";
 
 export default function Home(): JSX.Element {
   return (
-    <div className="min-h-screen bg-[#151934] px-4">
+    <Main>
       <Navigation />
       <CallToAction />
       <Footer />
-    </div>
+    </Main>
   );
 }
