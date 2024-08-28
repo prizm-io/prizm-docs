@@ -5,9 +5,11 @@ import NavigationItem from "./navigation-item";
 import { NavItem, NavItems } from "./navigation-item-list";
 import Drawer from "./drawer";
 import DrawerButton from "./drawer-button";
+import { useLocation } from "@docusaurus/router";
 
 export default function Navigation() {
-  const currentPath = window.location.pathname;
+  const location = useLocation();
+
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   return (
@@ -20,7 +22,7 @@ export default function Navigation() {
           {NavItems.map((item: NavItem) => (
             <NavigationItem
               key={`nav-item-${item.name}`}
-              active={item.active(currentPath)}
+              active={item.active(location.pathname)}
             >
               {item.name}
             </NavigationItem>
