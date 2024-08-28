@@ -1,3 +1,4 @@
+import { useLocation } from "@docusaurus/router";
 import DashboardButton from "./dashboard-button";
 import NavigationItem from "./navigation-item";
 
@@ -18,7 +19,7 @@ const NavItems = [
 ];
 
 export default function Navigation() {
-  const currentPath = window.location.pathname;
+  const location = useLocation();
 
   return (
     <div className="w-full h-24 py-[25px] border-b border-[#151934] flex-col justify-start items-center inline-flex">
@@ -28,7 +29,7 @@ export default function Navigation() {
         </div>
         <div className="justify-center items-center gap-[15px] flex">
           {NavItems.map((item: NavItem) => (
-            <NavigationItem active={item.active(currentPath)}>
+            <NavigationItem active={item.active(location.pathname)}>
               {item.name}
             </NavigationItem>
           ))}
