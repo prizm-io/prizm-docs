@@ -1,12 +1,20 @@
+import useFadeIn from "@site/src/utils/use-fade-in";
 import Card from "./Card";
 import CardContent from "./CardContent";
 import CardDescription from "./CardDescription";
 import CardImage from "./CardImage";
 import CardTitle from "./CardTitle";
+import { cn } from "@site/src/utils/utils";
 
 export default function Benefits() {
+  const fadeIn = useFadeIn(true, 0);
   return (
-    <div className="w-full py-[70px] flex-col justify-start items-center inline-flex">
+    <div
+      className={cn(
+        "w-full py-[70px] flex-col justify-start items-center inline-flex",
+        fadeIn,
+      )}
+    >
       <div className="flex-col justify-center items-center gap-[60px] flex">
         <div className="flex-col justify-start items-center gap-5 flex">
           <div className="text-center text-[#f6f6f7] text-[56px] font-bold font-['Inter'] leading-[84px]">
