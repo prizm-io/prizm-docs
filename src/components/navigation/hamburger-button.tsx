@@ -1,4 +1,4 @@
-import { Menu } from "lucide-react";
+import HamburgerButtonIcon from "./hamburger-button-icon";
 
 export default function HamburgerButton(props: { onClick?: () => void }) {
   return (
@@ -7,7 +7,7 @@ export default function HamburgerButton(props: { onClick?: () => void }) {
       onClick={props.onClick}
       className="p-1 bg-transparent"
     >
-      <Menu />
+      <HamburgerButtonIcon />
     </button>
   );
 }
