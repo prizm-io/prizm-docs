@@ -1,3 +1,5 @@
+import { DASHBOARD_LINK } from "../navigation/dashboard-button";
+
 export default function CallToAction() {
   return (
     <div className="w-full min-h-[577px] py-[70px] flex-col justify-start items-center inline-flex">
@@ -20,7 +22,7 @@ export default function CallToAction() {
             </div>
           </div>
           <a
-            href="#"
+            href={DASHBOARD_LINK}
             className="px-[25px] py-[15px] bg-[#7d64ff] rounded-[36px] justify-center items-center gap-1.5 inline-flex hover:no-underline hover:bg-[#7663D6] transition-colors"
           >
             <div className="text-white text-base font-medium font-['Inter'] leading-none">

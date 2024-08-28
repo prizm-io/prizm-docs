@@ -1,7 +1,7 @@
-import CallToAction from "../components/cta/CallToAction";
 import Main from "../components/main";
+import CallToAction from "../components/call-to-action";
 import Navigation from "../components/navigation";
-import Footer from "../components/footer/Footer";
+import Footer from "../components/footer";
 
 export default function Home(): JSX.Element {
   return (
