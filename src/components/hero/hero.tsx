@@ -4,7 +4,7 @@ import HeroImages from "./hero-images";
 export default function Hero() {
   return (
     <>
-      <div className="h-[1011px] relative -mx-4">
+      <div className="h-full relative -mx-4">
         <div
           className="absolute w-full h-full "
           style={{
@@ -14,9 +14,9 @@ export default function Hero() {
             backgroundPosition: "center",
           }}
         ></div>
-        <div className="w-full flex flex-col items-center pt-[68px]">
+        <div className="w-full flex flex-col items-center py-[68px]">
           <div className="flex flex-col gap-[1.875rem] items-center font-inter max-w-[1224px]">
-            <h1 className="text-[4rem] leading-[72px] px-4 xl:px-0 font-bold text-center text-white">
+            <h1 className="text-[60px] xs:text-[64px] leading-[72px] px-4 xl:px-0 font-bold text-center text-white">
               An End-to-End IoT Solution for Everyone.
             </h1>
             <div className="flex justify-center px-4 lg:px-[205.5px] ">

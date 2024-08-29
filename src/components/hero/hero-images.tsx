@@ -1,4 +1,4 @@
-import { cn } from "@site/src/utils/utils"; // Ensure this import path is correct
+import { cn } from "@site/src/utils/utils";
 import { useState, useEffect } from "react";
 
 export default function HeroImages() {
@@ -7,19 +7,24 @@ export default function HeroImages() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % heroImages.length); // Change index to switch images
-    }, 5000); // Interval for switching images
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="relative justify-center flex w-full px-[12.56rem] pt-[50px]">
+    <div className="relative justify-center flex w-full pt-[50px]">
+      <img
+        className="invisible max-w-[808px] w-full px-4 lg:px-0 h-full"
+        src="img/hero-image1.png"
+        alt="invisible"
+      />
       {heroImages.map((src, index) => (
         <img
           key={index}
           className={cn(
-            "absolute max-w-[808px] w-full px-4 lg:px-0  h-auto transition-opacity duration-1000",
+            "absolute max-w-[808px] w-full px-4 lg:px-0 h-auto transition-opacity duration-1000",
             {
               "opacity-100": currentIndex === index,
               "opacity-0": currentIndex !== index,
