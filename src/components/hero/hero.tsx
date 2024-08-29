@@ -4,7 +4,7 @@ import HeroImages from "./hero-images";
 export default function Hero() {
   return (
     <>
-      <div className="h-[1011px] pb-10 relative -mx-4">
+      <div className="h-[1011px] relative -mx-4">
         <div
           className="absolute w-full h-full "
           style={{
