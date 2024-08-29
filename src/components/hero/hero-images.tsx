@@ -19,7 +19,7 @@ export default function HeroImages() {
         <img
           key={index}
           className={cn(
-            "absolute w-[808px]  h-auto transition-opacity duration-1000",
+            "absolute max-w-[808px] w-full px-4 lg:px-0  h-auto transition-opacity duration-1000",
             {
               "opacity-100": currentIndex === index,
               "opacity-0": currentIndex !== index,
