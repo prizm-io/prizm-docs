@@ -1,4 +1,4 @@
-export const DASHBOARD_LINK = 'https://dashboard.prizm.io';
+export const DASHBOARD_LINK = "https://dashboard.prizm.io";
 
 export default function DashboardButton(props: {
   link?: string;
@@ -6,8 +6,8 @@ export default function DashboardButton(props: {
 }) {
   return (
     <a
-      href={props.link ?? '#'}
-      className='px-[25px] py-[15px] bg-[#7d64ff] rounded-[36px] justify-center items-center gap-2.5 flex hover:bg-[#7663D6] transition-colors hover:no-underline'
+      href={props.link ?? "#"}
+      className="px-[25px] py-[15px] bg-[#7d64ff] rounded-[36px] justify-center items-center gap-2.5 flex hover:bg-[#7663D6] transition-colors hover:no-underline"
     >
       <div className="text-white text-base font-medium font-['Inter'] leading-none">
         {props.children}

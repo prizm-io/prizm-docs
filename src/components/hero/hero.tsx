@@ -1,26 +1,26 @@
-import GetStartedButton, { DASHBOARD_LINK } from './get-started-button';
-import HeroImages from './hero-images';
+import GetStartedButton, { DASHBOARD_LINK } from "./get-started-button";
+import HeroImages from "./hero-images";
 
 export default function Hero() {
   return (
     <>
-      <div className='h-[1011px] relative'>
+      <div className="h-[1011px] relative">
         <div
-          className='absolute w-full h-full '
+          className="absolute w-full h-full "
           style={{
-            backgroundImage: 'url(/img/hero-bg.png)',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center',
+            backgroundImage: "url(/img/hero-bg.png)",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
           }}
         ></div>
-        <div className='w-full flex flex-col items-center pt-[68px]'>
-          <div className='flex flex-col gap-[1.875rem] items-center font-inter max-w-[1224px]'>
-            <h1 className='text-[4rem] leading-[72px] font-bold text-center text-white'>
+        <div className="w-full flex flex-col items-center pt-[68px]">
+          <div className="flex flex-col gap-[1.875rem] items-center font-inter max-w-[1224px]">
+            <h1 className="text-[4rem] leading-[72px] font-bold text-center text-white">
               An End-to-End IoT Solution for Everyone.
             </h1>
-            <div className='flex justify-center lg:px-[205.5px] '>
-              <span className='text-[#8f9bb7] text-center text-lg'>
+            <div className="flex justify-center lg:px-[205.5px] ">
+              <span className="text-[#8f9bb7] text-center text-lg">
                 PRIZM is an end-to-end IoT solution that provides Out-of-the-Box
                 Hardware, Connectivity, Device Software, and Cloud Services to
                 streamline IoT product development, requiring no technical
