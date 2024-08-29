@@ -5,6 +5,8 @@ import Footer from "../components/footer";
 import HeroRoot from "../components/hero/hero-root";
 import HeroContent from "../components/hero/hero-content";
 import HeroTitle from "../components/hero/hero-title";
+import CheckIcon from "../components/content/CheckIcon";
+import XIcon from "../components/content/XIcon";
 
 export default function Home(): JSX.Element {
   return (
@@ -65,85 +67,85 @@ export default function Home(): JSX.Element {
           <div className="max-w-[calc(98vw-32px)] overflow-scroll">
             <div className="min-w-[1224px] self-stretch h-96 flex-col justify-start items-start flex">
               <div className="self-stretch h-16 justify-center items-center gap-4 inline-flex">
-                <div className="w-[317px] h-11 p-3 opacity-0 justify-center items-center gap-2.5 flex">
+                <div className="w-[340px] h-11 p-3 opacity-0 justify-center items-center gap-2.5 flex">
                   <div className="grow shrink basis-0 text-justify text-[#080808] text-[10px] font-medium font-['TT Norms Pro'] leading-tight">
                     Lorem Ipsum
                   </div>
                 </div>
-                <div className="grow shrink basis-0 h-12 p-1.5 justify-center items-center gap-2.5 flex">
+                <div className="flex-1 h-12 p-1.5 justify-center items-center gap-2.5 flex">
                   <div className="text-justify text-[#f6f6f7] text-lg font-semibold font-['Inter'] leading-9">
                     CELLULAR & WI-FI CARD
                   </div>
                 </div>
-                <div className="grow shrink basis-0 h-12 p-1.5 justify-center items-center gap-2.5 flex">
+                <div className="flex-1 h-12 p-1.5 justify-center items-center gap-2.5 flex">
                   <div className="text-justify text-[#f6f6f7] text-lg font-semibold font-['Inter'] leading-9">
                     WI-FI CARD
                   </div>
                 </div>
               </div>
               <div className="self-stretch h-16 border-t border-[#464f7a] justify-center items-center gap-4 inline-flex">
-                <div className="h-[60px] p-3 justify-center items-center gap-2.5 flex">
-                  <div className="w-[317px] grow shrink basis-0 text-[#f6f6f7] text-lg font-medium font-['TT Norms Pro'] leading-9">
+                <div className="w-[340px] h-[60px] p-3 justify-center items-center gap-2.5 flex">
+                  <div className="grow shrink basis-0 text-[#f6f6f7] text-lg font-medium font-['TT Norms Pro'] leading-9">
                     Compatible with prototyping platform
                   </div>
                 </div>
-                <div className="grow shrink basis-0 h-6 justify-center items-center gap-2.5 flex">
-                  <div className="w-6 h-6 relative" />
+                <div className="flex-1 h-6 justify-center items-center gap-2.5 flex">
+                  <CheckIcon />
                 </div>
-                <div className="grow shrink basis-0 h-6 justify-center items-center gap-2.5 flex">
-                  <div className="w-6 h-6 relative" />
+                <div className="flex-1 h-6 justify-center items-center gap-2.5 flex">
+                  <CheckIcon />
                 </div>
               </div>
               <div className="self-stretch h-16 border-t border-[#464f7a] justify-center items-center gap-4 inline-flex">
-                <div className="h-[60px] p-3 justify-center items-center gap-2.5 flex">
+                <div className="w-[340px] h-[60px] p-3 justify-center items-center gap-2.5 flex">
                   <div className="grow shrink basis-0 text-[#f6f6f7] text-lg font-medium font-['TT Norms Pro'] leading-9">
                     Wi-Fi connectivity
                   </div>
                 </div>
-                <div className="grow shrink basis-0 h-6 justify-center items-center gap-2.5 flex">
-                  <div className="w-6 h-6 relative" />
+                <div className="flex-1 h-6 justify-center items-center gap-2.5 flex">
+                  <CheckIcon />
                 </div>
-                <div className="grow shrink basis-0 h-6 justify-center items-center gap-2.5 flex">
-                  <div className="w-6 h-6 relative" />
+                <div className="flex-1 h-6 justify-center items-center gap-2.5 flex">
+                  <CheckIcon />
                 </div>
               </div>
               <div className="self-stretch h-16 border-t border-[#464f7a] justify-center items-center gap-4 inline-flex">
-                <div className="h-[60px] p-3 justify-center items-center gap-2.5 flex">
-                  <div className="grow shrink basis-0 text-[#f6f6f7] text-lg font-medium font-['TT Norms Pro'] leading-9">
+                <div className="w-[340px] h-[60px] p-3 justify-start gap-2.5 flex">
+                  <div className="text-[#f6f6f7] text-lg font-medium font-['TT Norms Pro'] leading-9">
                     Bluetooth connectivity
                   </div>
                 </div>
-                <div className="grow shrink basis-0 h-6 justify-center items-center gap-2.5 flex">
-                  <div className="w-6 h-6 relative" />
+                <div className="flex-1 h-6 justify-center items-center gap-2.5 flex">
+                  <CheckIcon />
                 </div>
-                <div className="grow shrink basis-0 h-6 justify-center items-center gap-2.5 flex">
-                  <div className="w-6 h-6 relative" />
+                <div className="flex-1 h-6 justify-center items-center gap-2.5 flex">
+                  <CheckIcon />
                 </div>
               </div>
               <div className="self-stretch h-16 border-t border-[#464f7a] justify-center items-center gap-4 inline-flex">
-                <div className="h-[60px] p-3 justify-center items-center gap-2.5 flex">
-                  <div className="grow shrink basis-0 text-[#f6f6f7] text-lg font-medium font-['TT Norms Pro'] leading-9">
+                <div className="w-[340px] h-[60px] p-3 justify-start gap-2.5 flex">
+                  <div className=" text-[#f6f6f7] text-lg font-medium font-['TT Norms Pro'] leading-9">
                     Cellular connectivity
                   </div>
                 </div>
-                <div className="grow shrink basis-0 h-6 justify-center items-center gap-2.5 flex">
-                  <div className="w-6 h-6 relative" />
+                <div className="flex-1 h-6 justify-center items-center gap-2.5 flex">
+                  <CheckIcon />
                 </div>
-                <div className="grow shrink basis-0 h-6 justify-center items-center gap-2.5 flex">
-                  <div className="w-6 h-6 relative" />
+                <div className="flex-1 h-6 justify-center items-center gap-2.5 flex">
+                  <XIcon />
                 </div>
               </div>
               <div className="self-stretch h-16 border-t border-[#464f7a] justify-center items-center gap-4 inline-flex">
-                <div className="h-[60px] p-3 justify-center items-center gap-2.5 flex">
-                  <div className="grow shrink basis-0 text-[#f6f6f7] text-lg font-medium font-['TT Norms Pro'] leading-9">
+                <div className="w-[340px] h-[60px] p-3 justify-start gap-2.5 flex">
+                  <div className="text-[#f6f6f7] text-lg font-medium font-['TT Norms Pro'] leading-9">
                     GPS/GNSS connectivity
                   </div>
                 </div>
-                <div className="grow shrink basis-0 h-6 justify-center items-center gap-2.5 flex">
-                  <div className="w-6 h-6 relative" />
+                <div className="flex-1 h-6 justify-center items-center gap-2.5 flex">
+                  <CheckIcon />
                 </div>
-                <div className="grow shrink basis-0 h-6 justify-center items-center gap-2.5 flex">
-                  <div className="w-6 h-6 relative" />
+                <div className="flex-1 h-6 justify-center items-center gap-2.5 flex">
+                  <XIcon />
                 </div>
               </div>
             </div>
