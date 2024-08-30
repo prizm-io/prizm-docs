@@ -23,6 +23,7 @@ export default function Navigation() {
             <NavigationItem
               key={`nav-item-${item.name}`}
               active={item.active(location.pathname)}
+              url={item.link}
             >
               {item.name}
             </NavigationItem>
@@ -40,7 +41,10 @@ export default function Navigation() {
           <div className="h-full flex flex-col justify-between">
             <div className="flex flex-col gap-4">
               {NavItems.map((item: NavItem) => (
-                <DrawerButton key={`drawer-nav-item-${item.name}`}>
+                <DrawerButton
+                  key={`drawer-nav-item-${item.name}`}
+                  url={item.link}
+                >
                   {item.name}
                 </DrawerButton>
               ))}
