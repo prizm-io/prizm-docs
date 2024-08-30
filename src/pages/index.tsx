@@ -11,6 +11,7 @@ import GetStartedButton, {
   DASHBOARD_LINK,
 } from "../components/hero/get-started-button";
 import HeroImages from "../components/hero/hero-images";
+import Partners from "../components/partners";
 
 export default function Home(): JSX.Element {
   return (
@@ -33,6 +34,7 @@ export default function Home(): JSX.Element {
         </HeroContent>
         <HeroImages />
       </HeroRoot>
+      <Partners />
       <Features />
       <Benefits />
       <CallToAction />
