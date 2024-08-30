@@ -12,7 +12,7 @@ interface MarqueeProps {
 }
 
 export default function Marquee({ companies, isReversed }: MarqueeProps) {
-  const extendedCompanies = [...companies, ...companies];
+  const duplicatedCompanies = [...companies, ...companies];
 
   return (
     <div className="relative overflow-hidden mx-[-1rem]">
@@ -22,9 +22,9 @@ export default function Marquee({ companies, isReversed }: MarqueeProps) {
           "animate-marquee-reverse": isReversed,
         })}
       >
-        {extendedCompanies.map((logo, index) => (
+        {duplicatedCompanies.map((logo, index) => (
           <PartnerLogo
-            key={index}
+            key={`companies-${index}`}
             src={logo.src}
             alt={logo.alt}
             className="flex-shrink-0"
@@ -40,9 +40,9 @@ export default function Marquee({ companies, isReversed }: MarqueeProps) {
           }
         )}
       >
-        {extendedCompanies.map((logo, index) => (
+        {duplicatedCompanies.map((logo, index) => (
           <PartnerLogo
-            key={index}
+            key={`reversed-Companies-${index}`}
             src={logo.src}
             alt={logo.alt}
             className="flex-shrink-0"
