@@ -5,19 +5,21 @@ import PieIcon from "./PieIcon";
 import BuildIcon from "./BuildIcon";
 import DeployIcon from "./DeployIcon";
 import ScaleIcon from "./ScaleIcon";
-import useIsVisible from "./UseIsVisible";
 import Tab from "./Tab";
 import TabInfo from "./TabInfo";
 import TabInfoImg from "./TabInfoImg";
 import TabIcon from "./TabIcon";
 import TabDescription from "./TabDescription";
+import useIsVisible from "@site/src/hooks/UseIsVisible";
+
+const tabs = ["connect", "build", "deploy", "scale"];
+const tabTimer = 5000;
 
 export default function Guide() {
   const [selectedTab, setSelectedTab] = useState("connect");
   const ref = useRef();
   const isVisible = useIsVisible(ref);
   const intervalRef = useRef(null);
-  const tabs = ["connect", "build", "deploy", "scale"];
 
   const switchTab = () => {
     const currentIndex = tabs.indexOf(selectedTab);
@@ -29,7 +31,7 @@ export default function Guide() {
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
     }
-    intervalRef.current = setInterval(switchTab, 5000);
+    intervalRef.current = setInterval(switchTab, tabTimer);
   };
 
   useEffect(() => {
@@ -61,23 +63,35 @@ export default function Guide() {
             >
               <TabsList className="flex flex-col xl:flex-row w-full justify-between gap-6">
                 <Tab onTabClick={resetInterval} value="connect">
-                  <TabIcon icon={PieIcon} />
+                  <TabIcon
+                    icon={PieIcon}
+                    isActive={selectedTab === "connect"}
+                  />
                   1. Connect Sensors
                 </Tab>
                 <Tab onTabClick={resetInterval} value="build">
-                  <TabIcon icon={BuildIcon} />
+                  <TabIcon
+                    icon={BuildIcon}
+                    isActive={selectedTab === "build"}
+                  />
                   2. Build the App
                 </Tab>
                 <Tab onTabClick={resetInterval} value="deploy">
-                  <TabIcon icon={DeployIcon} />
+                  <TabIcon
+                    icon={DeployIcon}
+                    isActive={selectedTab === "deploy"}
+                  />
                   3. Deploy the App
                 </Tab>
                 <Tab onTabClick={resetInterval} value="scale">
-                  <TabIcon icon={ScaleIcon} />
+                  <TabIcon
+                    icon={ScaleIcon}
+                    isActive={selectedTab === "scale"}
+                  />
                   4. Scale to Millions
                 </Tab>
               </TabsList>
-              <div className="text-lg xl:h-[500px] w-full justify-center pt-[60px]">
+              <div className="text-lg h-full xl:h-w-full justify-center pt-[60px]">
                 <TabInfo value="connect">
                   <TabInfoImg src="img/working.png" />
                   <TabDescription>
