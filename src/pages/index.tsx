@@ -12,7 +12,6 @@ import GetStartedButton, {
 } from "../components/hero/get-started-button";
 import HeroImages from "../components/hero/hero-images";
 import Partners from "../components/partners";
-import Guide from "../components/guide.tsx";
 
 export default function Home(): JSX.Element {
   return (

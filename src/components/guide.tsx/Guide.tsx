@@ -5,7 +5,7 @@ import PieIcon from "./PieIcon";
 import BuildIcon from "./BuildIcon";
 import DeployIcon from "./DeployIcon";
 import ScaleIcon from "./ScaleIcon";
-import useIsVisible from "./isVisible";
+import useIsVisible from "./UseIsVisible";
 
 import Tab from "./Tab";
 import TabInfo from "./TabInfo";
@@ -87,29 +87,41 @@ export default function Guide() {
                 <TabInfo value="connect">
                   <TabInfoImg src="img/working.png" />
                   <TabDescription>
-                    Gorem ipsum dolor sit amet consectetur. Faucibus dui duis
-                    feugiat tempor. interdum neque arcu nunc hendrerit
-                    ullamcorper euismod. Gorem ipsum dolor sit amet consectetur.
-                    Faucibus dui duis feugiat tempor. interdum neque arcu nunc
-                    hendrerit ullamcorper euismod. Gorem ipsum dolor sit amet
-                    consectetur. Faucibus dui duis feugiat tempor. interdum
-                    neque arcu nunc hendrerit ullamcorper euismod. Gorem ipsum
-                    dolor sit amet consectetur. Faucibus dui duis feugiat
-                    tempor. interdum neque arcu nunc hendrerit ullamcorper
-                    euismod. Gorem ipsum dolor sit amet consectetur.
+                    Simply connect your sensors to PRIZM's out-of-box hardware.
+                    Whether they are temperature sensors, motion sensors, or any
+                    other hardware that needs to communicate, PRIZM takes care
+                    of the rest and ensures secure and reliable connectivity.
                   </TabDescription>
                 </TabInfo>
                 <TabInfo value="build">
                   <TabInfoImg src="img/working.png" />
-                  <TabDescription> test content</TabDescription>
+                  <TabDescription>
+                    Build your dream application effortlessly with the advanced
+                    app builder, featuring drag-and-drop funct-ionality to
+                    connect sensors / actuators / other systems, implement
+                    business logic, and seamlessly send data to the cloud or
+                    trigger notifications for warnings and errors.
+                  </TabDescription>
                 </TabInfo>
                 <TabInfo value="deploy">
                   <TabInfoImg src="img/working.png" />
-                  <TabDescription>test content</TabDescription>
+                  <TabDescription>
+                    Deploy your application seamlessly from the web platform.
+                    Whether you’re launching a small pilot or a large-scale
+                    rollout, PRIZM ensures your app is deployed safely and
+                    securely. Get your solution up and running quickly, with
+                    minimal downtime and maximum reliability.
+                  </TabDescription>
                 </TabInfo>
                 <TabInfo value="scale">
                   <TabInfoImg src="img/working.png" />
-                  <TabDescription> test content</TabDescription>
+                  <TabDescription>
+                    Bring your MVP to market quickly and test your business
+                    model in real-world scenarios, giving you the confidence to
+                    expand your business. PRIZM helps you capitalize on market
+                    opportunities faster, ensuring you stay ahead of the
+                    competition.
+                  </TabDescription>
                 </TabInfo>
               </div>
             </Tabs>
