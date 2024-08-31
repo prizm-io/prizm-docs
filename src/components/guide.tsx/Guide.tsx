@@ -1,12 +1,11 @@
 import { useEffect, useRef, useState } from "react";
-import { Tabs, TabsContent, TabsList } from "@radix-ui/react-tabs";
+import { Tabs, TabsList } from "@radix-ui/react-tabs";
 import GuideTitle from "./GuideTitle";
 import PieIcon from "./PieIcon";
 import BuildIcon from "./BuildIcon";
 import DeployIcon from "./DeployIcon";
 import ScaleIcon from "./ScaleIcon";
 import useIsVisible from "./UseIsVisible";
-
 import Tab from "./Tab";
 import TabInfo from "./TabInfo";
 import TabInfoImg from "./TabInfoImg";
@@ -15,25 +14,22 @@ import TabDescription from "./TabDescription";
 
 export default function Guide() {
   const [selectedTab, setSelectedTab] = useState("connect");
-  const [currentIndex, setCurrentIndex] = useState(0);
   const ref = useRef();
   const isVisible = useIsVisible(ref);
   const intervalRef = useRef(null);
   const tabs = ["connect", "build", "deploy", "scale"];
 
   const switchTab = () => {
-    setCurrentIndex((prevIndex) => {
-      const newIndex = (prevIndex + 1) % tabs.length;
-      setSelectedTab(tabs[newIndex]);
-      return newIndex;
-    });
+    const currentIndex = tabs.indexOf(selectedTab);
+    const newIndex = (currentIndex + 1) % tabs.length;
+    setSelectedTab(tabs[newIndex]);
   };
 
   const resetInterval = () => {
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
     }
-    intervalRef.current = setInterval(switchTab, 500000);
+    intervalRef.current = setInterval(switchTab, 5000);
   };
 
   useEffect(() => {
@@ -47,9 +43,7 @@ export default function Guide() {
     };
   }, [isVisible]);
 
-  const handleTabChange = (value) => {
-    const newIndex = tabs.indexOf(value);
-    setCurrentIndex(newIndex);
+  const handleTabChange = (value: string) => {
     setSelectedTab(value);
     resetInterval();
   };
@@ -97,7 +91,7 @@ export default function Guide() {
                   <TabInfoImg src="img/working.png" />
                   <TabDescription>
                     Build your dream application effortlessly with the advanced
-                    app builder, featuring drag-and-drop funct-ionality to
+                    app builder, featuring drag-and-drop functionality to
                     connect sensors / actuators / other systems, implement
                     business logic, and seamlessly send data to the cloud or
                     trigger notifications for warnings and errors.
