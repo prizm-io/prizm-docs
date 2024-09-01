@@ -1,5 +1,5 @@
 import { TabsTrigger } from "@radix-ui/react-tabs";
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 
 export default function Tab(props: {
   children: ReactNode;

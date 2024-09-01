@@ -16,7 +16,7 @@ const tabs = ["connect", "build", "deploy", "scale"];
 const tabTimer = 5000;
 
 export default function Guide() {
-  const [selectedTab, setSelectedTab] = useState("connect");
+  const [selectedTab, setSelectedTab] = useState(tabs[0]);
   const ref = useRef();
   const isVisible = useIsVisible(ref);
   const intervalRef = useRef(null);
