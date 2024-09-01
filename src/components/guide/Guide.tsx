@@ -20,10 +20,12 @@ export default function Guide() {
   const ref = useRef();
   const isVisible = useIsVisible(ref);
   const intervalRef = useRef(null);
+  const selectedTabRef = useRef(selectedTab);
 
   const switchTab = () => {
-    const currentIndex = tabs.indexOf(selectedTab);
+    const currentIndex = tabs.indexOf(selectedTabRef.current);
     const newIndex = (currentIndex + 1) % tabs.length;
+    selectedTabRef.current = tabs[newIndex];
     setSelectedTab(tabs[newIndex]);
   };
 
@@ -47,6 +49,7 @@ export default function Guide() {
 
   const handleTabChange = (value: string) => {
     setSelectedTab(value);
+    selectedTabRef.current = value;
     resetInterval();
   };
 
