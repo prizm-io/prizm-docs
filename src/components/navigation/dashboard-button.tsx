@@ -1,8 +1,9 @@
+import type { ReactNode } from "react";
 export const DASHBOARD_LINK = "https://dashboard.prizm.io";
 
 export default function DashboardButton(props: {
   link?: string;
-  children?: React.ReactNode;
+  children?: ReactNode;
 }) {
   return (
     <a
