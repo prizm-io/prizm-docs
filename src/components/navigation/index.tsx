@@ -1,3 +1,3 @@
-import { default as Root } from "./Navigation";
+import { default as Root } from "./navigation";
 
 export default Root;
