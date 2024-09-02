@@ -1,9 +1,10 @@
 import { cn } from "@site/src/utils/utils";
+import type { ReactNode } from "react";
 
 export default function NavigationItem(props: {
   url?: string;
   active?: boolean;
-  children?: React.ReactNode;
+  children?: ReactNode;
 }) {
   return (
     <a
@@ -14,7 +15,7 @@ export default function NavigationItem(props: {
         className={cn(
           "text-base font-normal font-['Inter'] leading-normal",
           props.active ? "text-white" : "text-[#8f9bb7]",
-          "hover:text-white transition-colors",
+          "hover:text-white transition-colors"
         )}
       >
         {props.children}

@@ -7,8 +7,10 @@ import Drawer from "./drawer";
 import DrawerButton from "./drawer-button";
 import LogoImg from "./LogoImg";
 import LogoLink from "./LogoLink";
+import { useLocation } from "@docusaurus/router";
 
 export default function Navigation() {
+  const location = useLocation();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   return (
