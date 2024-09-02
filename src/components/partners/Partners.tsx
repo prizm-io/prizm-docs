@@ -2,10 +2,10 @@ import Marquee from "./Marquee";
 import PartnersTitle from "./PartnersTitle";
 
 const companies = [
-  { src: "img/homey.png", alt: "Homey Logo" },
-  { src: "img/luminous.png", alt: "Luminous Logo" },
-  { src: "img/hitech.png", alt: "HiTech Logo" },
-  { src: "img/proline.png", alt: "ProLine Logo" },
+  { src: "img/allwinner.png", alt: "Allwinner Logo" },
+  { src: "img/simcom.png", alt: "SIMcom Logo" },
+  { src: "img/antenova.png", alt: "Antenova Logo" },
+  { src: "img/1nce.png", alt: "1nce Logo" },
 ];
 
 export default function Partners() {
