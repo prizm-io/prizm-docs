@@ -1,13 +1,20 @@
+import useIsVisibleOnce from "@site/src/hooks/UseIsVisibleOnce";
+import useFadeIn from "@site/src/utils/use-fade-in";
 import { cn } from "@site/src/utils/utils";
-import type { ReactNode } from "react";
+import { useRef, type ReactNode } from "react";
 
 export default function HeroRoot(props: {
   children?: ReactNode;
   className?: string;
 }) {
+  const ref = useRef();
+  const enabled = useIsVisibleOnce(ref, 0);
+  const fadeIn = useFadeIn(enabled, 0);
+
   return (
     <div
-      className={cn("h-full relative -mx-4", props.className)}
+      ref={ref}
+      className={cn("h-full relative -mx-4", props.className, fadeIn)}
       style={{
         backgroundImage: "url(/img/hero-bg.png)",
         backgroundSize: "cover",
