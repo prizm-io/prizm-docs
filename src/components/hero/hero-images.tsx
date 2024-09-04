@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 export default function HeroImages() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const heroImages = ["img/hero-image1.png", "img/test.png"];
+  const heroImages = ["img/hero-image1.png", "img/hero-image2.png"];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -28,7 +28,7 @@ export default function HeroImages() {
             {
               "opacity-100": currentIndex === index,
               "opacity-0": currentIndex !== index,
-            }
+            },
           )}
           src={src}
           alt={`Hero Image ${index + 1}`}

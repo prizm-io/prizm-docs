@@ -7,7 +7,6 @@ import DeployIcon from "./DeployIcon";
 import ScaleIcon from "./ScaleIcon";
 import Tab from "./Tab";
 import TabInfo from "./TabInfo";
-import TabInfoImg from "./TabInfoImg";
 import TabIcon from "./TabIcon";
 import TabDescription from "./TabDescription";
 import useIsVisible from "@site/src/hooks/UseIsVisible";
@@ -86,8 +85,7 @@ export default function Guide() {
             </TabsList>
             <div className="text-lg h-full xl:h-w-full justify-center pt-[60px]">
               <TabInfo value="connect">
-                <TabInfoImg src="img/working.png" />
-                <TabDescription>
+                <TabDescription className="text-center">
                   Simply connect your sensors to PRIZM's out-of-box hardware.
                   Whether they are temperature sensors, motion sensors, or any
                   other hardware that needs to communicate, PRIZM takes care of
@@ -95,8 +93,7 @@ export default function Guide() {
                 </TabDescription>
               </TabInfo>
               <TabInfo value="build">
-                <TabInfoImg src="img/working.png" />
-                <TabDescription>
+                <TabDescription className="text-center">
                   Build your dream application effortlessly with the advanced
                   app builder, featuring drag-and-drop functionality to connect
                   sensors / actuators / other systems, implement business logic,
@@ -105,8 +102,7 @@ export default function Guide() {
                 </TabDescription>
               </TabInfo>
               <TabInfo value="deploy">
-                <TabInfoImg src="img/working.png" />
-                <TabDescription>
+                <TabDescription className="text-center">
                   Deploy your application seamlessly from the web platform.
                   Whether you’re launching a small pilot or a large-scale
                   rollout, PRIZM ensures your app is deployed safely and
@@ -115,8 +111,7 @@ export default function Guide() {
                 </TabDescription>
               </TabInfo>
               <TabInfo value="scale">
-                <TabInfoImg src="img/working.png" />
-                <TabDescription>
+                <TabDescription className="text-center">
                   Bring your MVP to market quickly and test your business model
                   in real-world scenarios, giving you the confidence to expand
                   your business. PRIZM helps you capitalize on market

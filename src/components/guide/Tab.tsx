@@ -10,7 +10,7 @@ export default function Tab(props: {
     <TabsTrigger
       onClick={props.onTabClick}
       value={props.value}
-      className="flex gap-[10px] border-b-[3px] border-[#161B42] justify-center items-center px-[53px] pb-[15px] whitespace-nowrap data-[state=active]:border-[#7D64FF]"
+      className="flex gap-[10px] border-b-[3px] border-[#161B42] justify-center items-center px-[53px] pb-[15px] whitespace-nowrap data-[state=active]:border-[#7D64FF] transition-colors duration-500"
     >
       {props.children}
     </TabsTrigger>
